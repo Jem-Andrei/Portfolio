@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+body {
+  background-color: #0a1022;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+nav {
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.Nav-inner {
+  display: flex;
+  gap: 3rem;
+}
+nav a {
+  color: #fff;
+}
+.Color {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  z-index: -1;
+  top: -500px;
+  left: 20%;
+  background-image: radial-gradient(closest-side, #e9f59075, #0a1022);
+}
+.Hero-inner {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: 1000;
+}
+.Hero-inner img {
+  margin-top: 1.5rem;
+  width: 35vw;
+  border: solid 3px #fff;
+}
+
+.Who {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  gap: 1.25rem;
+  border-top: solid 1px #ffffff50;
+  color: #fff;
+}
+.Who span:first-child {
+  font-size: 2.5em;
+  color: #e9f590;
+  font-weight: 1000;
+}
+.Skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #fff;
+}
+.Skills span {
+  font-size: 2.5em;
+  color: #e9f590;
+  font-weight: 1000;
+}
+
+.Skill-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.Skill-container img {
+  padding: 2rem;
+  border: solid 1px #ffffff50;
+  border-radius: 10px;
+  background-color: #1d2237;
+}
+.Connect {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.Connect span {
+  font-size: 2.5em;
+  color: #0a1022;
+  font-weight: 1000;
+}
+.Connect input {
+  background-color: #e3e3e3;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+.Connect button {
+  background-color: #e9f590;
+  color: #333;
+  padding: 1rem;
+  font-size: 1em;
+  font-weight: bold;
+}
+textarea {
+  resize: none;
+  background-color: #e3e3e3;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 431px) {
+  nav {
+    display: none;
+  }
+  .Hero-inner {
+    font-size: 2em;
+  }
+  .Skills {
+    padding-top: 5rem;
+  }
+  .Skill-container {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .Connect {
+    width: 90%;
+  }
+  .Who {
+    padding-top: 5rem;
+    text-align: center;
+  }
+}
